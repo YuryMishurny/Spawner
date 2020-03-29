@@ -11,8 +11,7 @@ public class Spawner : MonoBehaviour
     private float _elapsedTime = 0;
     private int _numberPointSpawn = 0;
 
-
-    void Update()
+    private void Update()
     {
         _elapsedTime += Time.deltaTime;
 
@@ -25,6 +24,5 @@ public class Spawner : MonoBehaviour
             if (_numberPointSpawn >= _positionSpawn.Length)
                 _numberPointSpawn = 0;
         }
-        
     }
 }
